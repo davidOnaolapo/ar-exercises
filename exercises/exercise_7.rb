@@ -9,4 +9,7 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+
+
+@store1.employees.create(first_name: "aja", last_name: "", hourly_rate: 60);
+#  puts Store.count
