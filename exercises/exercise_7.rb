@@ -9,7 +9,10 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
+puts "Enter the Store name"
+store_name = gets.chomp
 
 
-@store1.employees.create(first_name: "aja", last_name: "", hourly_rate: 60);
-#  puts Store.count
+
+@mystore = Store.create(name: "#{store_name}");
+puts @mystore.errors.full_messages
